@@ -1,0 +1,7 @@
+
+product_status_switch.ajax_update:
+  path: 'status'
+  defaults:
+    _controller: '\Drupal\product_status_switch\Controller\AjaxController::update'
+  requirements:
+    _permission: 'update any default commerce_product'

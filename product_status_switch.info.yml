@@ -1,0 +1,7 @@
+name: 'Product Status Switch'
+type: module
+description: 'Switches product status'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - commerce_product

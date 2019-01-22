@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains product_status_switch.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function product_status_switch_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the product_status_switch module.
+    case 'help.page.product_status_switch':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Switches product status') . '</p>';
+      return $output;
+
+    default:
+  }
+}
